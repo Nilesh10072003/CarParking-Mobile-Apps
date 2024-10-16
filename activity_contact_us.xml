@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Customize the layout for the Contact Us activity -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Add any relevant content for Contact Us -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have questions or need assistance? Feel free to contact us through any of the following channels:"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="support@carparkingapp.com"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Phone Number -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+1 (123) 456-7890"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Address -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123 Main Street, Cityville, State, 12345"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/location"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Social Media Links -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect with us on social media:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/facebook"
+            android:layout_marginRight="16dp"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/twitter"
+            android:layout_marginRight="16dp"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/instagram"/>
+
+    </LinearLayout>
+
+    <!-- Back to Dashboard Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

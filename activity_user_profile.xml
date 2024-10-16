@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UserProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profileImage"
+            android:src="@drawable/profile"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleName"
+            android:layout_marginTop="10dp"
+            android:text="Nilesh Tambekar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleUserName"
+            android:layout_marginTop="10dp"
+            android:text="Nilya"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="User Name: "
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/ProfileUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilya"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email : "
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/ProfilEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nileshtambekar10@gmail.com"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mobile No: "
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/ProfilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8591663755"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password : "
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/ProfilePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilesh@12"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="313dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="LogOut"/>
+
+        <Button
+            android:id="@+id/aboutUsButton"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:onClick="openAboutUsActivity"
+            android:text="About Us" />
+
+        <Button
+            android:id="@+id/contactUsButton"
+            android:layout_width="315dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:onClick="openContactUsActivity"
+            android:text="Contact Us" />
+    </LinearLayout>
+
+</LinearLayout>

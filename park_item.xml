@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/labelVehicalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type: "
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/VehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VType:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/labelNumberPlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Plate: "
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/NumberPlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Plate:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/labelDriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name: "
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/DriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/labelDriverNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Number: "
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/DriverNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Number :"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/labelAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount: "
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount :"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/labelLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/LocationSpinner"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location :"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/printPdfBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print PDF"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

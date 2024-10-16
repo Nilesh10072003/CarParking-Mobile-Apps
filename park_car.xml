@@ -1,0 +1,140 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splashlogo1"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Parking Form"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Driver Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/DriverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driver Name"
+            android:padding="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Number Plate -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NumberPlate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number Plate"
+            android:padding="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Driver Number -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/DriverNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driver Number (Optional)"
+            android:padding="15dp"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Vehicle Type -->
+    <Spinner
+        android:id="@+id/VehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Vehicle Type"
+        android:padding="15dp"/>
+
+    <!-- Amount -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:padding="15dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Location -->
+    <Spinner
+        android:id="@+id/LocationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Location"
+        android:padding="15dp"/>
+
+    <!-- Park Button -->
+    <Button
+        android:id="@+id/ParkCarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Park"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Instructions:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Fill in the correct details in the input fields."
+        android:paddingTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Ensure the information provided is accurate."
+        android:paddingTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Complete all the required fields."
+        android:paddingTop="5dp"/>
+</LinearLayout>
